@@ -1,0 +1,10 @@
+services:
+  pliego:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      PLIEGO_AI_BASE_URL: ${PLIEGO_AI_BASE_URL:-http://host.docker.internal:11434/v1}
+      PLIEGO_AI_MODEL: ${PLIEGO_AI_MODEL:-}
+      PLIEGO_AI_API_KEY: ${PLIEGO_AI_API_KEY:-}
+    restart: unless-stopped

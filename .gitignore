@@ -1,0 +1,13 @@
+.venv/
+web/node_modules/
+web/dist/
+__pycache__/
+.pytest_cache/
+.DS_Store
+.env*
+!.env.example
+*.tsbuildinfo
+*.log
+coverage/
+tmp/
+artifacts/

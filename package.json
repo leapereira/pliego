@@ -1,0 +1,12 @@
+{
+  "name": "pliego-local",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "start": "bash scripts/start.sh",
+    "dev": ".venv/bin/python -m uvicorn server.main:app --host 127.0.0.1 --port 8000 --reload",
+    "build": "npm --prefix web run build",
+    "test": ".venv/bin/python -m pytest tests -q"
+  }
+}
